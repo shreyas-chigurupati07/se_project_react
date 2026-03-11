@@ -1,0 +1,24 @@
+.item__card_container {
+  margin: 0;
+  padding-top: 40px;
+}
+
+.item__card_info {
+  font-family: "Cabinet Grotesk", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  margin: 0;
+  padding-bottom: 34px;
+}
+
+.item__card {
+  width: 323px;
+  height: 326px;
+}
+
+.item__card_label {
+  position: relative;
+  top: 15px;
+
+  margin: 0;
+}
