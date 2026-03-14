@@ -1,9 +1,10 @@
+.weather__card_container {
+}
+
 .weather__card {
   background-color: #00a3ff;
-  max-width: 1360px;
-  max-height: 80px;
-  padding: 20px 16px;
   border-radius: 12px;
+  padding: 20px 16px;
 }
 
 .weather__card_temp {
@@ -12,13 +13,11 @@
   font-size: 36px;
   font-weight: 700;
   margin: 0;
-  max-width: 69px;
-  max-height: 40px;
 }
 
 .weater__card_cloud {
   position: absolute;
-  top: 138px;
+  top: 132px;
   right: 40px;
   z-index: 1;
 }
@@ -27,4 +26,12 @@
   top: 120px;
   right: 40px;
   z-index: 0;
+}
+
+.weather__card_info {
+  font-family: "Cabinet Grotesk", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  margin: 0;
+  padding-top: 40px;
 }
