@@ -1,8 +1,7 @@
 import "./ItemCard.css";
-import { defaultClothingItems } from "../../utils/clothingItems.js";
 
-function ItemCard() {
-  const itemCards = defaultClothingItems.map((clothingItem) => (
+function ItemCard({ defaultItems }) {
+  const itemCards = defaultItems.map((clothingItem) => (
     <li key={clothingItem._id} className="item__card">
       <img
         className="item__card_img"

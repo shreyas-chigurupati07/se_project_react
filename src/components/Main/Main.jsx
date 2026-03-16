@@ -2,12 +2,12 @@ import "./Main.css";
 import WeatherCard from "../WeatherCard/WeatherCard";
 import ItemCard from "../ItemCard/ItemCard";
 
-function Main() {
+function Main({ defaultItems }) {
   return (
     <>
       <div className="main">
         <WeatherCard />
-        <ItemCard />
+        <ItemCard defaultItems={defaultItems} />
       </div>
     </>
   );
