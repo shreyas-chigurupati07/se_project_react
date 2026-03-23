@@ -33,7 +33,7 @@ function ItemModal({ card, isPreviewOpen, onClose }) {
         >
           <img
             src={modalCloseBtn}
-            alt="CloseBtn"
+            alt="Close icon"
             className="item__modal_closeBtn-img"
           />
         </button>

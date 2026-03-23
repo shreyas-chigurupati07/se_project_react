@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import "./ModalWithForm.css";
 import modalCloseBtn from "../../assets/closebtn.svg";
 
-function ModalWithForm({ children, isOpen, onClose, title, buttonText }) {
+function ModalWithForm({ children, isOpen, onClose, name, buttonText }) {
   useEffect(() => {
     if (!isOpen) return;
 
@@ -26,7 +26,7 @@ function ModalWithForm({ children, isOpen, onClose, title, buttonText }) {
       }}
     >
       <div className="modal__content">
-        <p className="modal__title">{title}</p>
+        <p className="modal__title">{name}</p>
         <button type="button" className="modal__close-btn" onClick={onClose}>
           <img
             src={modalCloseBtn}
