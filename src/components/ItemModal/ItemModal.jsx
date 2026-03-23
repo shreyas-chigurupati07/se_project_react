@@ -1,8 +1,8 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import "./ItemModal.css";
 import modalCloseBtn from "../../assets/closebtn.svg";
 
-function ItemModal({ card, onCardClick, isPreviewOpen, onClose }) {
+function ItemModal({ card, isPreviewOpen, onClose }) {
   useEffect(() => {
     if (!isPreviewOpen) return;
 

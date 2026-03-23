@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import "./ModalWithForm.css";
 import modalCloseBtn from "../../assets/closebtn.svg";
 

@@ -13,8 +13,6 @@ import {
 import { filterWeatherData, getWeather } from "../../utils/weatherApi";
 
 function App() {
-  const [defaultCardItems, setDefaultCardItems] =
-    React.useState(defaultClothingItems);
   const [activeModal, setActiveModal] = React.useState("");
   const [selectedCard, setSelectedCard] = React.useState({});
   const [selectedWeather, setSelectedWeather] = React.useState("");
@@ -53,7 +51,7 @@ function App() {
             weatherData={weatherData}
           />
           <Main
-            defaultItems={defaultCardItems}
+            defaultItems={defaultClothingItems}
             weatherData={weatherData}
             handleCardClick={handleSelectedCards}
           />
