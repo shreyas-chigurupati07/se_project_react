@@ -30,7 +30,7 @@ function ModalWithForm({ children, isOpen, onClose, name, buttonText }) {
         <button type="button" className="modal__close-btn" onClick={onClose}>
           <img
             src={modalCloseBtn}
-            alt="modal_closeBtn"
+            alt="close icon"
             className="modal__closeBtn-img"
           />
         </button>
