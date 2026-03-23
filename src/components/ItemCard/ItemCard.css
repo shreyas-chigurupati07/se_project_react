@@ -38,6 +38,10 @@
   padding: 2px 12px;
 }
 
+.item__card_img:hover {
+  cursor: pointer;
+}
+
 /* .item__card_category-container {
   display: flex;
   justify-content: space-between;

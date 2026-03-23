@@ -102,10 +102,10 @@
   height: 36px;
 }
 
-.modal__btn-disabled {
+/* .modal__btn-disabled {
   opacity: 0.3;
   cursor: pointer;
-}
+} */
 
 .modal__addgarment-btn:hover {
   opacity: 0.6;

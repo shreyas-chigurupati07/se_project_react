@@ -2,6 +2,9 @@
   background-color: #00a3ff;
   border-radius: 12px;
   padding: 20px 16px;
+  display: flex;
+  max-height: 80px;
+  max-width: 1360px;
 }
 
 .weather__card_temp {
