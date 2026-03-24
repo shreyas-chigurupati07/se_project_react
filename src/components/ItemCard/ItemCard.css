@@ -4,9 +4,9 @@
   padding-top: 40px;
   list-style: none;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   flex-wrap: wrap;
-  row-gap: 20px;
+  gap: 20px;
 }
 
 .item__card {
@@ -14,6 +14,7 @@
   display: inline-block;
   max-width: 322px;
   max-height: 326px;
+  margin: 0;
 }
 
 .item__card_img {
@@ -41,10 +42,3 @@
 .item__card_img:hover {
   cursor: pointer;
 }
-
-/* .item__card_category-container {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  row-gap: 20px;
-} */

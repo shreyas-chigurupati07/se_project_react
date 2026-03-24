@@ -1,16 +1,27 @@
 import "./Main.css";
 import WeatherCard from "../WeatherCard/WeatherCard";
 import ItemCard from "../ItemCard/ItemCard";
+import { defaultClothingItems } from "../../utils/constants";
 
-function Main({ defaultItems, weatherData, handleCardClick }) {
+function Main({ weatherData, handleCardClick }) {
   return (
     <main className="main">
       <WeatherCard currentWeather={weatherData} />
-      <ItemCard
-        defaultItems={defaultItems}
-        weatherData={weatherData}
-        onCardClick={handleCardClick}
-      />
+      <ul className="item__card_container">
+        {defaultClothingItems
+          .filter((clothingItem) => {
+            return clothingItem.weather === weatherData.type;
+          })
+          .map((clothingItem) => {
+            return (
+              <ItemCard
+                key={clothingItem._id}
+                item={clothingItem}
+                onCardClick={handleCardClick}
+              ></ItemCard>
+            );
+          })}
+      </ul>
     </main>
   );
 }

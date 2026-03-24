@@ -1,24 +1,19 @@
 import "./ItemCard.css";
-9;
-function ItemCard({ defaultItems, weatherData, onCardClick }) {
-  const itemCards = defaultItems
-    .filter((clothingItem) => {
-      return clothingItem.weather === weatherData.type;
-    })
-    .map((clothingItem) => (
-      <li key={clothingItem._id} className="item__card">
-        <img
-          onClick={() => {
-            onCardClick(clothingItem);
-          }}
-          className="item__card_img"
-          src={clothingItem.link}
-          alt={clothingItem.name}
-        />
-        <div className="item__card_label">{clothingItem.name}</div>
-      </li>
-    ));
-  return <ul className="item__card_container">{itemCards}</ul>;
+
+function ItemCard({ key, item, onCardClick }) {
+  return (
+    <li key={key} className="item__card">
+      <img
+        onClick={() => {
+          onCardClick(item);
+        }}
+        className="item__card_img"
+        src={item.link}
+        alt={item.name}
+      />
+      <div className="item__card_label">{item.name}</div>
+    </li>
+  );
 }
 
 export default ItemCard;

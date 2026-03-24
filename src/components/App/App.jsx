@@ -5,16 +5,12 @@ import Main from "../Main/Main";
 import Footer from "../Footer/Footer";
 import ModalWithForm from "../ModalWithForm/ModalWithForm";
 import ItemModal from "../ItemModal/ItemModal";
-import {
-  defaultClothingItems,
-  coordinates,
-  APIkey,
-} from "../../utils/constants";
+import { coordinates, APIkey } from "../../utils/constants";
 import { filterWeatherData, getWeather } from "../../utils/weatherApi";
 
 function App() {
-  const [defaultCardItems, setDefaultCardItems] =
-    React.useState(defaultClothingItems);
+  // const [defaultCardItems, setDefaultCardItems] =
+  //   React.useState(defaultClothingItems);
   const [activeModal, setActiveModal] = React.useState("");
   const [selectedCard, setSelectedCard] = React.useState({});
   const [selectedWeather, setSelectedWeather] = React.useState("");
@@ -48,11 +44,7 @@ function App() {
     <div className="page">
       <div className="page__content">
         <Header handleAddBtnClick={handleOpenModal} weatherData={weatherData} />
-        <Main
-          defaultItems={defaultCardItems}
-          weatherData={weatherData}
-          handleCardClick={handleSelectedCard}
-        />
+        <Main weatherData={weatherData} handleCardClick={handleSelectedCard} />
         <Footer />
         <ModalWithForm
           isOpen={activeModal === "open"}
