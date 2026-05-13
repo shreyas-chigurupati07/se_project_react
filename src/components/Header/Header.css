@@ -16,16 +16,18 @@
   margin: 0;
 }
 .header__clothes-btn {
-  margin: 0 20px 0 auto;
+  margin: 0;
   border: none;
+  padding: 0 20px;
+  background-color: #f3f3f3;
+}
+.header__username {
+  margin: 0;
 }
 
-.header__user-container {
-  display: flex;
-  align-items: center;
-  gap: 88px;
-}
 .header__avatar {
+  margin: 0;
+  padding-left: 12px;
   width: 40px;
   height: 40px;
 }
