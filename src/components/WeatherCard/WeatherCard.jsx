@@ -9,7 +9,6 @@ function WeatherCard({ currentWeather }) {
   return (
     <div className="weather__card_container">
       <div className="weather__card">
-        {/* <p className="weather__card_temp">{currentWeather.temp.F}°F</p> */}
         <p className="weather__card_temp">{currentWeather.temp[currentTemperatureUnit]}°{currentTemperatureUnit}</p>
         <img src={cloud} alt="cloud" className="weater__card_cloud" />
         <img src={sun} alt="sun" className="weather__card_sun" />
